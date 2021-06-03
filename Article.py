@@ -1,4 +1,4 @@
-class article():
+class Article():
     '''
     Class to describe an article - containing:
     guid
