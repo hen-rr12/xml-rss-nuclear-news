@@ -14,3 +14,6 @@ class Article():
         self.description = description
         self.pubDate = pubDate
         self.link = link
+
+    def __str__(self):
+        return str(self.__class__) + ": " + str(self.__dict__)
