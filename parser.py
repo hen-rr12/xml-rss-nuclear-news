@@ -1,12 +1,12 @@
 import requests
 from lxml import etree
-import urllib
+import urllib3
 
 from RSS import RSS
 from Article import Article
 
 url = "https://www.world-nuclear-news.org/?rss=feed"
-root = etree.parse(urllib.request.urlopen(url))
+root = etree.parse(urllib3.request('GET', url))
 
 channelPath = '//rss//channel'
 articlePath = '//rss//channel//item'
